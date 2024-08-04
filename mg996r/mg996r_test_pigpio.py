@@ -2,6 +2,14 @@
 ## 馬達從0°每次遞增+10°直到180°
 ## mg996r 必須是 180 規格的
 
+## 安裝 pigpiod
+## sudo apt-get install pigpio python-pigpio python3-pigpio
+
+## 執行此檔案前要先開啟 pigpio 的 Server
+## sudo pigpiod
+## 結束後要關掉 Server
+## sudo killall pigpiod
+
 import pigpio
 import time
 
