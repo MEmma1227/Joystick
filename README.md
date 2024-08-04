@@ -51,20 +51,29 @@ node name: **joystick_simulator** , subscribe topic: **/amr_control_vel**
     cd ~/catkin_ws/src/my_publisher/src
     touch XXX.py
     ```    
-5. 打開 XXX.py文件並編輯：
+5. 打開 XXX.py文件並編輯
     ```
     nano XXX.py
     ```
-6. 使檔案具有執行權限
+7. 儲存並退出檔案
+   Save
+    ```
+    Ctrl + O
+    ```
+    Exit
+    ```
+    Ctrl + X
+    ```
+9. 使檔案具有執行權限
     ```
     chmod +x XXX.py
     ```
-7. 修改CMakeLists.txt檔案包含腳本 (node ==> src/XXX.py)
+10. 修改CMakeLists.txt檔案包含腳本 (node ==> src/XXX.py)
     ```
     cd ~/catkin_ws/src/my_publisher
     echo 'catkin_install_python(PROGRAMS src/XXX.py DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})' >> CMakeLists.txt
     ```
-9. 編譯工作空間
+11. 編譯工作空間
     ```
     cd ~/catkin_ws
     catkin_make
