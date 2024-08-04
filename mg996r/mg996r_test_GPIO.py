@@ -25,7 +25,7 @@ def set_angle(angle):
     # 2 = 0 degree
     # 7 = 90 degree
     # 12 = 180 degree
-    duty = 2 + (angle / 18)
+    duty = 2 + flaot(angle / 18.0)
     pwm_servo.ChangeDutyCycle(duty)
     # to eliminate vibration
     time.sleep(0.3)
