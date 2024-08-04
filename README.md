@@ -56,6 +56,7 @@ node name: **joystick_simulator** , subscribe topic: **/amr_control_vel**
     nano XXX.py
     ```
 7. 儲存並退出檔案
+   
    Save
     ```
     Ctrl + O
