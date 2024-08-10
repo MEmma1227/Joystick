@@ -37,7 +37,7 @@ def rotation_decode(channel):
     # 順時鐘： 00 -> 10 -> 11 -> 01
     # 逆時鐘： 00 -> 01 -> 11 -> 10
   
-    # 根據狀態機的變化判斷方向 , 轉一圈 = 1000 counters
+    # 根據狀態機的變化判斷方向 , 轉一圈 = 4000 counters
     if state_transition in [0b1101, 0b0100, 0b0010, 0b1011]:
         counter += 1
         print("direction -> ", counter)
