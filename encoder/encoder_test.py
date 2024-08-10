@@ -3,7 +3,7 @@
 import RPi.GPIO as GPIO
 from time import sleep
 
-counter = 10
+counter = 0
 
 Enc_A = 17  
 Enc_B = 27  
