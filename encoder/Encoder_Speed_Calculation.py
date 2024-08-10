@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# only test for one encoder
 
 import RPi.GPIO as GPIO
 from time import sleep, time
