@@ -157,8 +157,8 @@ def keyboard_adjust_xypos():
         y_angle = y_ini_angle - level_bias
         # set_angle(servo_X_pin, x_angle)
         # set_angle(servo_Y_pin, y_angle)
-        joystick_pos[0] = 400 + int(x_pos * 300)
-        joystick_pos[1] = 400 - int(y_pos * 300)
+        joystick_pos[0] = 400 + int(x_pos * 150)
+        joystick_pos[1] = 400 - int(y_pos * 150)
     # return x_pos, y_pos
 
 
